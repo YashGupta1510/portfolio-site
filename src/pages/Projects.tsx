@@ -111,6 +111,13 @@ const ProjectsWrapper = styled(motion.section)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 720px) {
+    padding: 20px;
+  }
+    h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
 `;
 
 const ProjectsGrid = styled.div`
@@ -119,11 +126,13 @@ const ProjectsGrid = styled.div`
   gap: 30px;
   width: 100%;
   max-width: 1200px;
+  @media (max-width: 720px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 `;
 
 const ProjectCard = styled(motion.div)`
-
-color:#0b0c10;
+  color: #0b0c10;
   background-color: #c5c6c7;
   border-radius: 15px;
   overflow: hidden;
@@ -258,7 +267,7 @@ export const Projects = () => {
       animate="visible"
       variants={containerVariants}
     >
-      <h2 style={({ marginBottom: '1rem' }) }>Projects</h2>
+      <h2 style={{ marginBottom: "1.5rem" }}>Projects</h2>
       <ProjectsGrid>
         {projects.map((project, index) => (
           <ProjectCard

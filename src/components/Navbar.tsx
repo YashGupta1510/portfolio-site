@@ -28,6 +28,10 @@ const NavLinks = styled.ul`
   gap: 40px;
   color: #66fcf1;
   margin-right: 20px; 
+   @media (max-width: 720px) {
+    
+    margin-right:0px;
+  }
 `;
 
 
