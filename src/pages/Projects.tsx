@@ -259,6 +259,14 @@ export const Projects = () => {
         "Built a robust banking service backend using Spring Boot and a microservices architecture. The system handled core banking operations such as account management, transaction processing, and user authentication. I integrated various microservices to ensure scalability, optimized performance, and secure data management. This project leveraged RESTful APIs, enabling seamless communication between services.",
       link: "https://github.com/YashGupta1510/Banking-Service",
     },
+    {
+      imageUrl: "./assets/transcriptor.png",
+      tags: ["Java", "Spring Boot", "OpenAI"],
+      title: "Voice to Text Transcriptor",
+      description:
+        "Designed and implemented a voice-to-text transcription service using Spring Boot and the OpenAI Whisper model. The application provides high-accuracy transcription for various audio formats, supporting real-time processing. Integrated the service with robust APIs, enabling smooth communication with other systems.",
+      link: "https://github.com/YashGupta1510/SpringBootAITranscriptor",
+    },
   ];
 
   return (
