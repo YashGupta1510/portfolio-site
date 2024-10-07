@@ -1,105 +1,4 @@
-// src/pages/Projects.tsx
-// import styled from "styled-components";
-// import { motion } from "framer-motion";
 
-// const ProjectsWrapper = styled(motion.section)`
-//   padding: 50px;
-//   background-color: #1f2833;
-//    @media (max-width: 720px) {
-//    padding:20px;
-//   }
-// `;
-
-// const ProjectsGrid = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-//   gap: 30px;
-//   margin: 10px 0px 0px 0px;
-// `;
-
-// const ProjectCard = styled(motion.div)`
-//   color:#0b0c10;
-//   background: #c5c6c7;
-//   padding: 20px;
-//   border-radius:15px;
-//   box-shadow: 0 4px 8px rgba(69, 169, 158, 0.4);
-// `;
-// const Button = styled.button`
-//   background: #1f2833;
-//   color: #c5c6c7;
-//   padding: 0.25em 1em;
-//   border: 2px solid #45a29e;
-//   border-radius: 5px;
-// `;
-
-// const containerVariants = {
-//   hidden: { opacity: 0, y: 100 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: { duration: 0.5, staggerChildren: 0.15 },
-//   },
-// };
-
-// const itemVariants = {
-//   hidden: { opacity: 0, y: 50 },
-//   visible: { opacity: 1, y: 0 },
-// };
-
-// export const Projects = () => {
-//   const projects = [
-//     {
-//       title: "Blog App",
-//       description: "Developed a user-friendly blog application using React JS for the frontend and JSONDB for data storage. The app allows users to create, edit, and delete blog posts seamlessly. I focused on building a clean, responsive UI and implementing efficient state management with React hooks. The app also features dynamic routing and ensures a smooth user experience.",
-//       link: "https://github.com/YashGupta1510/BlogApp/tree/master/blogapplication",
-//     },
-//     {
-//       title: "Ecommerce Backend",
-//       description:
-//         "In my e-commerce backend project, I developed a scalable microservices-based architecture using Java, Spring Boot, and MongoDB. The system managed core functionalities such as product catalog management, user authentication, and order processing. I integrated MySQL for relational data and implemented JWT-based security to protect user data. Additionally, I worked on optimizing the inventory management system, ensuring smooth and efficient operations. The project also involved designing and consuming RESTful APIs and deploying services on AWS for a cloud-based infrastructure.",
-//       link: "https://github.com/YashGupta1510/Ecommerce-backend",
-//     },
-//     {
-//       title: "Review Community",
-//       description: "Designed and developed a review community platform using Java, Spring Boot and Angular to allow users to share and browse reviews on various products and services. The platform featured user authentication, rating systems, and comment functionality. I focused on creating a scalable architecture that efficiently handled user data and reviews, with secure API integrations and a robust backend system. This project also included implementing data persistence with MySQL and performance optimization for seamless user interaction.",
-//       link: "https://github.com/YashGupta1510/Review-Community-Frontend",
-//     },
-//     {
-//       title: "Automation Testing for Flipkart.com",
-//       description: "This project automates 20 test cases for Flipkart.com using Selenium WebDriver, Java, TestNG, and following the Page Object Model (POM) architecture. It includes features like selective test execution based on an Excel file, central configuration through properties files, logging, and Extent Reports for detailed test reporting. The project also utilizes custom-made utility JAR files for common functionalities and integrates with Jenkins for continuous integration and continuous deployment (CI/CD).",
-//       link: "https://github.com/YashGupta1510/AutomationExitTest",
-//     },
-//     {
-//       title: "Banking Service",
-//       description: "Built a robust banking service backend using Spring Boot and a microservices architecture. The system handled core banking operations such as account management, transaction processing, and user authentication. I integrated various microservices to ensure scalability, optimized performance, and secure data management. This project leveraged RESTful APIs, enabling seamless communication between services.",
-//       link: "https://github.com/YashGupta1510/Banking-Service",
-//     }
-//   ];
-
-//   return (
-//     <ProjectsWrapper
-//       variants={containerVariants}
-//       initial="hidden"
-//       animate="visible"
-//     >
-//       <h2 style={({ marginBottom: '0.8rem' }) }>Projects</h2>
-//       <ProjectsGrid>
-//         {projects.map((project, index) => (
-//           <ProjectCard key={index} variants={itemVariants}>
-//             <h3 style={({ marginBottom: '0.8rem', color: '#0b0c10'}) }>{project.title}</h3>
-//             <p style={({ marginBottom: '0.8rem' }) }>{project.description}</p>
-//             <Button>
-//             <a href={project.link} target="_blank" rel="noopener noreferrer" >
-//               View Project
-//             </a></Button>
-//           </ProjectCard>
-//         ))}
-//       </ProjectsGrid>
-//     </ProjectsWrapper>
-//   );
-// };
-
-// ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 // src/pages/Projects.tsx
 import styled from "styled-components";
@@ -239,7 +138,7 @@ export const Projects = () => {
 
       title: "Review Community",
       description:
-        "Designed and developed a review community platform using Java, Spring Boot and Angular to allow users to share and browse reviews on various products and services. The platform featured user authentication, rating systems, and comment functionality. I focused on creating a scalable architecture that efficiently handled user data and reviews, with secure API integrations and a robust backend system. This project also included implementing data persistence with MySQL and performance optimization for seamless user interaction.",
+        "Designed and developed a review community platform using Java, Spring Boot and Angular to allow users to share and browse reviews on various products and services. The platform featured user authentication, rating systems, and comment functionality. This project also included implementing data persistence with MySQL and performance optimization for seamless user interaction.",
       link: "https://github.com/YashGupta1510/Review-Community-Frontend",
     },
     {
@@ -248,7 +147,7 @@ export const Projects = () => {
 
       title: "Automation Testing for Flipkart.com",
       description:
-        "This project automates 20 test cases for Flipkart.com using Selenium WebDriver, Java, TestNG, and following the Page Object Model (POM) architecture. It includes features like selective test execution based on an Excel file, central configuration through properties files, logging, and Extent Reports for detailed test reporting. The project also utilizes custom-made utility JAR files for common functionalities and integrates with Jenkins for continuous integration and continuous deployment (CI/CD).",
+        "This project automates 20 test cases for Flipkart.com using Selenium WebDriver, Java, TestNG, and following the Page Object Model (POM) architecture. It includes features like selective test execution based on an Excel file, central configuration through properties files, logging, and Extent Reports for detailed test reporting. Integrates with Jenkins for continuous integration and continuous deployment (CI/CD).",
       link: "https://github.com/YashGupta1510/AutomationExitTest",
     },
     {
@@ -266,6 +165,14 @@ export const Projects = () => {
       description:
         "Designed and implemented a voice-to-text transcription service using Spring Boot and the OpenAI Whisper model. The application provides high-accuracy transcription for various audio formats, supporting real-time processing. Integrated the service with robust APIs, enabling smooth communication with other systems.",
       link: "https://github.com/YashGupta1510/SpringBootAITranscriptor",
+    },
+    {
+      imageUrl: "./assets/zithara.jpg",
+      tags: ["Flutter", "App Development"],
+      title: "Zithara",
+      description:
+        "Win up to 100% UPI Cashback, Daily Giveaways, Gift Cards & More. At Zithara, we #SupportLocal Merchants and Reward you for doing the same. Shop at your favorite Local Shops & Restaurants and Earn ZiCoins on every UPI transaction. ",
+      link: "https://play.google.com/store/apps/details?id=com.zithara.zithara",
     },
   ];
 
